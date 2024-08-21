@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1714787840">
+  <File Type="PWROPT-DCP" Name="Nano_Processor_with_out_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="Nano_Processor_with_out_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Nano_Processor_with_out.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Nano_Processor_with_out_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Nano_Processor_with_out_reports.tcl"/>
+  <File Type="BG-DRC" Name="Nano_Processor_with_out.drc"/>
+  <File Type="OPT-DCP" Name="Nano_Processor_with_out_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="Nano_Processor_with_out.hwdef"/>
+  <File Type="OPT-DRC" Name="Nano_Processor_with_out_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="Nano_Processor_with_out_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Nano_Processor_with_out_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Nano_Processor_with_out_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Nano_Processor_with_out_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Nano_Processor_with_out_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Nano_Processor_with_out_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Nano_Processor_with_out_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Nano_Processor_with_out_physopt.dcp"/>
+  <File Type="BG-BIT" Name="Nano_Processor_with_out.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Nano_Processor_with_out_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Nano_Processor_with_out_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Nano_Processor_with_out_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Nano_Processor_with_out_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Nano_Processor_with_out_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="Nano_Processor_with_out.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="Nano_Processor_with_out_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="Nano_Processor_with_out.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Nano_Processor_with_out_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="Nano_Processor_with_out.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Nano_Processor_with_out_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="Nano_Processor_with_out.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Nano_Processor_with_out_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Nano_Processor_with_out_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Nano_Processor_with_out_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Nano_Processor_with_out_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Nano_Processor_with_out_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Nano_Processor_with_out_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Nano_Processor_with_out_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="Nano_Processor_with_out.vdi"/>
+  <File Type="ROUTE-CLK" Name="Nano_Processor_with_out_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Nano_Processor_with_out_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Nano_Processor_with_out_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="Nano_Processor_with_out.nky"/>
+  <File Type="BITSTR-BMM" Name="Nano_Processor_with_out_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Nano_Processor_with_out.mmi"/>
+  <File Type="BITSTR-LTX" Name="Nano_Processor_with_out.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Nano_Processor_with_out.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU_4bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Decoder_2_to_4.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Decoder_3_to_8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Fetch_Instruction.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Generic_MUX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Instruction_Decoder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LUT_16_7.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX_8to1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX_8to1_4bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Nano_Processor.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Program_Counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Program_ROM_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RCA_3bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Reg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Register_Bank.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Slow_Clk.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Nano_Processor_with7seg_out.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Nano_Processor_with_out"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../project_122/project_122.srcs/constrs_1/imports/Downloads/Basys3Labs.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,25 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab9-10.srcs/sources_1/new/ALU_4bit.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Decoder_2_to_4.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Decoder_3_to_8.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/FA.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Fetch_Instruction.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Generic_MUX.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/HA.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Instruction_Decoder.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/LUT_16_7.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/MUX_8to1.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/MUX_8to1_4bit.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Nano_Processor.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Nano_Processor_with7seg_out.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Program_Counter.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Program_ROM_1.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/RCA_3bit.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Reg.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Register_Bank.vhd" \
+"../../../../Lab9-10.srcs/sources_1/new/Slow_Clk.vhd" \
+"../../../../Lab9-10.srcs/sim_1/new/TB_Nano_Processor_7segment.vhd" \
+
+# Do not sort compile order
+nosort

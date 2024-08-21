@@ -1,0 +1,283 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat May  4 07:17:24 2024
+# Process ID: 1816
+# Current directory: C:/Vivado/Lab9-10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16244 C:\Vivado\Lab9-10\Lab9-10.xpr
+# Log file: C:/Vivado/Lab9-10/vivado.log
+# Journal file: C:/Vivado/Lab9-10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado/Lab9-10/Lab9-10.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 860.242 ; gain = 108.992
+update_compile_order -fileset sources_1
+set_property top Nano_Processor_with_out [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Nano_Processor_with_out
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1013.633 ; gain = 104.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Nano_Processor_with_out' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor_with7seg_out.vhd:48]
+INFO: [Synth 8-3491] module 'Nano_Processor' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:34' bound to instance 'Nano_Processor_0' of component 'Nano_Processor' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor_with7seg_out.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'Nano_Processor' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:46]
+	Parameter max_count bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Slow_Clk.vhd:34' bound to instance 'Slow_Clk_0' of component 'Slow_Clk' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Slow_Clk.vhd:40]
+	Parameter max_count bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (1#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Slow_Clk.vhd:40]
+INFO: [Synth 8-3491] module 'Program_Counter' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Program_Counter.vhd:34' bound to instance 'Program_Counter_0' of component 'Program_Counter' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'Program_Counter' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Program_Counter.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Program_Counter' (2#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Program_Counter.vhd:43]
+INFO: [Synth 8-3491] module 'Program_ROM_1' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Program_ROM_1.vhd:5' bound to instance 'ProgramROM_0' of component 'Program_ROM_1' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'Program_ROM_1' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Program_ROM_1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Program_ROM_1' (3#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Program_ROM_1.vhd:13]
+INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Instruction_Decoder.vhd:34' bound to instance 'Instruction_Decoder_0' of component 'Instruction_Decoder' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Instruction_Decoder.vhd:49]
+INFO: [Synth 8-3491] module 'Fetch_Instruction' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Fetch_Instruction.vhd:35' bound to instance 'Fetch_Instruction_0' of component 'Fetch_Instruction' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Instruction_Decoder.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'Fetch_Instruction' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Fetch_Instruction.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Fetch_Instruction' (4#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Fetch_Instruction.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (5#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Instruction_Decoder.vhd:49]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:34' bound to instance 'RegisterBank_0' of component 'Register_Bank' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'Register_Bank' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:51]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Decoder_3_to_8.vhd:34' bound to instance 'Decoder_3_to_8_0' of component 'Decoder_3_to_8' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Decoder_3_to_8.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_0' of component 'Decoder_2_to_4' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Decoder_3_to_8.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Decoder_2_to_4' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_2_to_4' (6#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_1' of component 'Decoder_2_to_4' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Decoder_3_to_8.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (7#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Decoder_3_to_8.vhd:40]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Reg.vhd:34' bound to instance 'Reg_0' of component 'Reg' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Reg.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (8#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Reg.vhd:42]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Reg.vhd:34' bound to instance 'Reg_1' of component 'Reg' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:93]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Reg.vhd:34' bound to instance 'Reg_2' of component 'Reg' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:102]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Reg.vhd:34' bound to instance 'Reg_3' of component 'Reg' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:111]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Reg.vhd:34' bound to instance 'Reg_4' of component 'Reg' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:120]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Reg.vhd:34' bound to instance 'Reg_5' of component 'Reg' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:129]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Reg.vhd:34' bound to instance 'Reg_6' of component 'Reg' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:138]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Reg.vhd:34' bound to instance 'Reg_7' of component 'Reg' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'Register_Bank' (9#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Register_Bank.vhd:51]
+INFO: [Synth 8-3491] module 'ALU_4bit' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/ALU_4bit.vhd:34' bound to instance 'ALU_0' of component 'ALU_4bit' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'ALU_4bit' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/ALU_4bit.vhd:46]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/ALU_4bit.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:42]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/HA.vhd:34' bound to instance 'HA_0' of component 'HA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/HA.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'HA' (10#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/HA.vhd:41]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/HA.vhd:34' bound to instance 'HA_1' of component 'HA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'FA' (11#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/ALU_4bit.vhd:78]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/ALU_4bit.vhd:86]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_3' of component 'FA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/ALU_4bit.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'ALU_4bit' (12#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/ALU_4bit.vhd:46]
+INFO: [Synth 8-3491] module 'MUX_8to1_4bit' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1_4bit.vhd:36' bound to instance 'MuxA' of component 'MUX_8to1_4bit' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:232]
+INFO: [Synth 8-638] synthesizing module 'MUX_8to1_4bit' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1_4bit.vhd:54]
+INFO: [Synth 8-3491] module 'MUX_8to1' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1.vhd:34' bound to instance 'MUX_A' of component 'MUX_8to1' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1_4bit.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'MUX_8to1' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1.vhd:40]
+INFO: [Synth 8-226] default block is never used [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'MUX_8to1' (13#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1.vhd:40]
+INFO: [Synth 8-3491] module 'MUX_8to1' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1.vhd:34' bound to instance 'MUX_B' of component 'MUX_8to1' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1_4bit.vhd:84]
+INFO: [Synth 8-3491] module 'MUX_8to1' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1.vhd:34' bound to instance 'MUX_C' of component 'MUX_8to1' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1_4bit.vhd:98]
+INFO: [Synth 8-3491] module 'MUX_8to1' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1.vhd:34' bound to instance 'MUX_D' of component 'MUX_8to1' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1_4bit.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'MUX_8to1_4bit' (14#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1_4bit.vhd:54]
+INFO: [Synth 8-3491] module 'MUX_8to1_4bit' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/MUX_8to1_4bit.vhd:36' bound to instance 'MuxB' of component 'MUX_8to1_4bit' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:246]
+INFO: [Synth 8-3491] module 'RCA_3bit' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/RCA_3bit.vhd:35' bound to instance 'RCA_3bit_0' of component 'RCA_3bit' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:260]
+INFO: [Synth 8-638] synthesizing module 'RCA_3bit' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/RCA_3bit.vhd:46]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/RCA_3bit.vhd:62]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/RCA_3bit.vhd:72]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/RCA_3bit.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'RCA_3bit' (15#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/RCA_3bit.vhd:46]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'Generic_MUX' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Generic_MUX.vhd:35' bound to instance 'MuxNextAddress' of component 'Generic_MUX' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'Generic_MUX' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Generic_MUX.vhd:50]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_MUX' (16#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Generic_MUX.vhd:50]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Generic_MUX' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Generic_MUX.vhd:35' bound to instance 'MuxRegisterData' of component 'Generic_MUX' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:278]
+INFO: [Synth 8-638] synthesizing module 'Generic_MUX__parameterized1' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Generic_MUX.vhd:50]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_MUX__parameterized1' (16#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Generic_MUX.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Nano_Processor' (17#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor.vhd:46]
+	Parameter max_count bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Slow_Clk.vhd:34' bound to instance 'Slow_Clk_0' of component 'Slow_Clk' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor_with7seg_out.vhd:92]
+INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/LUT_16_7.vhd:35' bound to instance 'LUT_16_7_0' of component 'LUT_16_7' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor_with7seg_out.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/LUT_16_7.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (18#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/LUT_16_7.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Nano_Processor_with_out' (19#1) [C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/Nano_Processor_with7seg_out.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1056.879 ; gain = 148.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1056.879 ; gain = 148.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1056.879 ; gain = 148.008
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Vivado/project_122/project_122.srcs/constrs_1/imports/Downloads/Basys3Labs.xdc]
+Finished Parsing XDC File [C:/Vivado/project_122/project_122.srcs/constrs_1/imports/Downloads/Basys3Labs.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1392.711 ; gain = 483.840
+84 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1392.711 ; gain = 483.840
+set_property top TB_Nano_Processor_7segment [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Vivado/Lab9-10/Lab9-10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_Nano_Processor_7segment' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Vivado/Lab9-10/Lab9-10.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_Nano_Processor_7segment_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Vivado/Lab9-10/Lab9-10.srcs/sources_1/new/LUT_16_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity LUT_16_7
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Vivado/Lab9-10/Lab9-10.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 3a6b4679781f42b0be87389509fdb9ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Nano_Processor_7segment_behav xil_defaultlib.TB_Nano_Processor_7segment -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.Program_Counter [program_counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Program_ROM_1 [program_rom_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Fetch_Instruction [fetch_instruction_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU_4bit [alu_4bit_default]
+Compiling architecture mux_arch of entity xil_defaultlib.MUX_8to1 [mux_8to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8to1_4bit [mux_8to1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3bit [rca_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generic_MUX [\Generic_MUX(width=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.Generic_MUX [generic_mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nano_Processor [nano_processor_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nano_Processor_with_out [nano_processor_with_out_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nano_processor_7segment
+Built simulation snapshot TB_Nano_Processor_7segment_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Vivado/Lab9-10/Lab9-10.sim/sim_1/behav/xsim/xsim.dir/TB_Nano_Processor_7segment_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat May  4 07:26:27 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1392.711 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Vivado/Lab9-10/Lab9-10.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_Nano_Processor_7segment_behav -key {Behavioral:sim_1:Functional:TB_Nano_Processor_7segment} -tclbatch {TB_Nano_Processor_7segment.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source TB_Nano_Processor_7segment.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Nano_Processor_7segment_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1403.418 ; gain = 10.707
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Vivado/Lab9-10/Lab9-10.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+[Sat May  4 07:27:20 2024] Launched synth_1...
+Run output will be captured here: C:/Vivado/Lab9-10/Lab9-10.runs/synth_1/runme.log
+[Sat May  4 07:27:20 2024] Launched impl_1...
+Run output will be captured here: C:/Vivado/Lab9-10/Lab9-10.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1983.516 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1983.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2063.137 ; gain = 650.215
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Vivado/project_122/project_122.srcs/constrs_1/imports/Downloads/Basys3Labs.xdc]
+Finished Parsing XDC File [C:/Vivado/project_122/project_122.srcs/constrs_1/imports/Downloads/Basys3Labs.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -file {C:/Users/npafe/Desktop/Report utilization.txt} -name utilization_1
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2244.121 ; gain = 0.832
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 08:21:58 2024...

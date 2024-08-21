@@ -1,0 +1,1 @@
+-wto "3a6b4679781f42b0be87389509fdb9ff" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Sim_Seven_Segment_Controller_behav" "xil_defaultlib.Sim_Seven_Segment_Controller" -log "elaborate.log" 

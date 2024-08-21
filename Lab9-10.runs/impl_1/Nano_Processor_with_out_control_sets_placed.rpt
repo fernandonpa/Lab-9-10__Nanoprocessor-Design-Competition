@@ -1,0 +1,84 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Sat May  4 07:28:39 2024
+| Host         : Praneeth running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Nano_Processor_with_out_control_sets_placed.rpt
+| Design       : Nano_Processor_with_out
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      3 |            1 |
+|      4 |            6 |
+|      6 |            1 |
+|      7 |            1 |
+|     12 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |            9 |
+| No           | No                    | Yes                    |               3 |            1 |
+| No           | Yes                   | No                     |              63 |           17 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              30 |           14 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+--------------------------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|     Clock Signal    |                               Enable Signal                              |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++---------------------+--------------------------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  Slow_Clk_0/Clk_out |                                                                          |                                               |                1 |              1 |
+|  clk_IBUF_BUFG      |                                                                          | reset_IBUF                                    |                1 |              1 |
+|  Clk_BUFG           |                                                                          | ResInput                                      |                1 |              3 |
+| ~Clk_BUFG           | Nano_Processor_0/Instruction_Decoder_0/Fetch_Instruction_0/Q_reg[0]_4[0] | ResInput                                      |                3 |              4 |
+| ~Clk_BUFG           | Nano_Processor_0/Instruction_Decoder_0/Fetch_Instruction_0/Q_reg[0]_5[0] | ResInput                                      |                1 |              4 |
+| ~Clk_BUFG           | Nano_Processor_0/Instruction_Decoder_0/Fetch_Instruction_0/Q_reg[0]_1[0] | ResInput                                      |                3 |              4 |
+| ~Clk_BUFG           | Nano_Processor_0/Instruction_Decoder_0/Fetch_Instruction_0/Q_reg[0]_2[0] | ResInput                                      |                2 |              4 |
+| ~Clk_BUFG           | Nano_Processor_0/Instruction_Decoder_0/Fetch_Instruction_0/E[0]          | ResInput                                      |                1 |              4 |
+| ~Clk_BUFG           | Nano_Processor_0/Instruction_Decoder_0/Fetch_Instruction_0/Q_reg[0]_3[0] | ResInput                                      |                1 |              4 |
+| ~Clk_BUFG           | Nano_Processor_0/Instruction_Decoder_0/Fetch_Instruction_0/Q_reg[0][0]   | ResInput                                      |                3 |              6 |
+|  clk_IBUF_BUFG      |                                                                          |                                               |                5 |              7 |
+| ~Clk_BUFG           |                                                                          |                                               |                3 |             12 |
+|  clk_IBUF_BUFG      |                                                                          | Nano_Processor_0/Slow_Clk_0/count[31]_i_1_n_0 |                8 |             31 |
+|  clk_IBUF_BUFG      |                                                                          | Slow_Clk_0/count[31]_i_1__0_n_0               |                8 |             31 |
++---------------------+--------------------------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+
